@@ -1,0 +1,5 @@
+Hello, my name is Shital Kadam.
+
+I am learning DevOps with hands-on practice in AWS, Linux, Git, CI/CD, and automation.
+
+This file is uploaded as part of my DevOps assignment.
