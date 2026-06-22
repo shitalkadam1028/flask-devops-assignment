@@ -22,5 +22,16 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Pipeline Success
-        run: echo "CI pipeline completed successfully"
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ubuntu/flask-app
+            git pull origin main
+            sudo systemctl restart gunicorn
+
+      - name: Deployment Success
+        run: echo "Deployment completed successfully"
