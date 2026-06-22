@@ -1,4 +1,4 @@
-Hello, my name is Shital Kadam.
+Hello, my name is Shital shantaram Kadam.
 
 I am learning DevOps with hands-on practice in AWS, Linux, Git, CI/CD, and automation.
 
